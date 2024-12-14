@@ -12,3 +12,4 @@
 /home/rashmika/Design_patterns/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.pdb
 /home/rashmika/Design_patterns/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.genruntimeconfig.cache
 /home/rashmika/Design_patterns/ConsoleApp1/obj/Debug/net8.0/ref/ConsoleApp1.dll
+/home/rashmika/Design_patterns/ConsoleApp1/obj/Debug/net8.0/ConsoleApp1.sourcelink.json

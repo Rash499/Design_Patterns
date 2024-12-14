@@ -2,8 +2,13 @@
 
 using ConsoleApp1.src.OOP.Encapsulation;
 
-BadBankAccount badAccount = new BadBankAccount();
-badAccount.balance = 100;
+BankAccount bankaccount = new BankAccount(100); //create a new object
 
-System.Console.WriteLine(badAccount.balance);
+System.Console.WriteLine(bankaccount.GetBalance()); //using getbalance function for access the private data members
+
+bankaccount.Deposit(50); //call the deposit function
+System.Console.WriteLine(bankaccount.GetBalance());
+
+bankaccount.Withdraw(100); //call the withraw function
+System.Console.WriteLine(bankaccount.GetBalance()); 
 
