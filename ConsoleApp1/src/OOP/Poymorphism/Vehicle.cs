@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1.src.OOP.Inheritance{
+namespace ConsoleApp1.src.OOP.Polymorphism{
     public class Vehicle{
         public required string Brand { get; set; }
 
