@@ -10,13 +10,25 @@ bankaccount.Deposit(50); //call the deposit function
 System.Console.WriteLine(bankaccount.GetBalance());
 
 bankaccount.Withdraw(100); //call the withraw function
-System.Console.WriteLine(bankaccount.GetBalance());  */
+System.Console.WriteLine(bankaccount.GetBalance()); 
 
 //Abstarction
 
 using ConsoleApp1.src.OOP.Abstraction;
 
 EmailService emailservice = new EmailService();
-emailservice.SendEmail();
+emailservice.SendEmail();  
+
+//Inheritance
+
+using ConsoleApp1.src.OOP.Inheritance;
+
+var Car = new Car();
+Car.NumberofDoors = 4;
+Car.Brand = "Ford";
+Car.start();
+Car.stop(); */
+
+
 
 
