@@ -1,4 +1,9 @@
-﻿//Encapsulation
+﻿//----------------------------------------------------------------------------------------------------------------------------
+
+                //Encapsulation
+
+//----------------------------------------------------------------------------------------------------------------------------
+
 /*
 using ConsoleApp1.src.OOP.Encapsulation;
 
@@ -12,7 +17,12 @@ System.Console.WriteLine(bankaccount.GetBalance());
 bankaccount.Withdraw(100); //call the withraw function
 System.Console.WriteLine(bankaccount.GetBalance()); 
 
-//Abstarction
+//----------------------------------------------------------------------------------------------------------------------------
+
+                //Abstraction
+
+//----------------------------------------------------------------------------------------------------------------------------
+
 
 using ConsoleApp1.src.OOP.Abstraction;
 
@@ -29,7 +39,12 @@ Car.Brand = "Ford";
 Car.start();
 Car.stop(); 
 
-//polymorphism
+//----------------------------------------------------------------------------------------------------------------------------
+
+                //Polymorphism
+
+//----------------------------------------------------------------------------------------------------------------------------
+
 using ConsoleApp1.src.OOP.Polymorphism;
 
 List<Vehicle> vehicle = new List<Vehicle>();
@@ -41,22 +56,46 @@ foreach (var vehicle1 in vehicle){
     vehicle1.start();
 } 
 
-//coupling
+//----------------------------------------------------------------------------------------------------------------------------
+
+                //Coupling
+
+//----------------------------------------------------------------------------------------------------------------------------
+
 
 using ConsoleApp1.src.OOP.Coupling;
 
 var order = new Order(new EmailSender());
-order.PlaceOrder();  */
+order.PlaceOrder();  
 
-//composition [has-a]
+//----------------------------------------------------------------------------------------------------------------------------
+
+                //Composition [has-a]
+
+//----------------------------------------------------------------------------------------------------------------------------
+
 
 using ConsoleApp1.src.OOP.Composition;
 
 var car = new Car();
-car.StartCar();
+car.StartCar();  */
 
+//----------------------------------------------------------------------------------------------------------------------------
 
+                //SOLID PRINCIPLES 
+                //Single Resposibility Principle (SRP)
 
+//A class should have only one reason to change, meaning that it should have only one responsibility or purpose
 
+//----------------------------------------------------------------------------------------------------------------------------
+
+using ConsoleApp1.src.SOLID.Single_Responsibility_Principle;
+
+var user = new User{
+    Username = "Rashmika Dilmin",
+    Email = "rashmikadilmin@gmail.com"
+};
+var userser = new UserService();
+userser.Register(user);
 
 
