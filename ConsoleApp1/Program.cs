@@ -19,7 +19,7 @@ using ConsoleApp1.src.OOP.Abstraction;
 EmailService emailservice = new EmailService();
 emailservice.SendEmail();  
 
-//Inheritance
+//Inheritance [is-a]
 
 using ConsoleApp1.src.OOP.Inheritance;
 
@@ -39,14 +39,23 @@ vehicle.Add(new Bike{ Brand="Honda", Model="ct-100", Year=2000, NumberofWheels=2
 
 foreach (var vehicle1 in vehicle){
     vehicle1.start();
-} */
+} 
 
 //coupling
 
 using ConsoleApp1.src.OOP.Coupling;
 
 var order = new Order(new EmailSender());
-order.PlaceOrder();
+order.PlaceOrder();  */
+
+//composition [has-a]
+
+using ConsoleApp1.src.OOP.Composition;
+
+var car = new Car();
+car.StartCar();
+
+
 
 
 
