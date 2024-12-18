@@ -115,7 +115,7 @@ userser.Register(user); */
 //of the program
 
 //----------------------------------------------------------------------------------------------------------------------------
-
+/*
 
 using ConsoleApp1.src.SOLID.Liskov_Substitution_Principle;
 
@@ -128,4 +128,19 @@ System.Console.WriteLine("Area: "+ rect.Area +"\n");
 var sqr = new Square();
 sqr.SideLength = 20;
 
-System.Console.WriteLine("Area: " + sqr.Area);
+System.Console.WriteLine("Area: " + sqr.Area); */
+
+//----------------------------------------------------------------------------------------------------------------------------
+
+//Interface Segregation principle (ISP)
+
+//Clients should not be forced to depend on interfaces they do not use
+
+//----------------------------------------------------------------------------------------------------------------------------
+
+using ConsoleApp1.src.SOLID.Interface_Segregation_Principle;
+
+var circle = new Circle();
+circle.Radius = 10;
+
+System.Console.WriteLine(circle.Area());
