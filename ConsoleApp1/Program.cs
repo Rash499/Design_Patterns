@@ -138,9 +138,24 @@ System.Console.WriteLine("Area: " + sqr.Area); */
 
 //----------------------------------------------------------------------------------------------------------------------------
 
+/*
 using ConsoleApp1.src.SOLID.Interface_Segregation_Principle;
 
 var circle = new Circle();
 circle.Radius = 10;
 
-System.Console.WriteLine(circle.Area());
+System.Console.WriteLine(circle.Area());  */
+
+//----------------------------------------------------------------------------------------------------------------------------
+
+//Dependency Inversion Principle (DIP)
+
+//High level modules should not depend on low level modules, Both should depend on abstractions
+
+//----------------------------------------------------------------------------------------------------------------------------
+
+
+using ConsoleApp1.src.SOLID.Dependency_Inversion_Principle;
+
+var car = new Car(new Engine()); //dependecy injection
+car.StartCar();
