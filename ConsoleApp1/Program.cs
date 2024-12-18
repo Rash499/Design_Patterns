@@ -15,7 +15,7 @@ bankaccount.Deposit(50); //call the deposit function
 System.Console.WriteLine(bankaccount.GetBalance());
 
 bankaccount.Withdraw(100); //call the withraw function
-System.Console.WriteLine(bankaccount.GetBalance()); 
+System.Console.WriteLine(bankaccount.GetBalance()); */
 
 //----------------------------------------------------------------------------------------------------------------------------
 
@@ -23,7 +23,7 @@ System.Console.WriteLine(bankaccount.GetBalance());
 
 //----------------------------------------------------------------------------------------------------------------------------
 
-
+/*
 using ConsoleApp1.src.OOP.Abstraction;
 
 EmailService emailservice = new EmailService();
@@ -37,14 +37,14 @@ var Car = new Car();
 Car.NumberofDoors = 4;
 Car.Brand = "Ford";
 Car.start();
-Car.stop(); 
+Car.stop();   */
 
 //----------------------------------------------------------------------------------------------------------------------------
 
                 //Polymorphism
 
 //----------------------------------------------------------------------------------------------------------------------------
-
+/*
 using ConsoleApp1.src.OOP.Polymorphism;
 
 List<Vehicle> vehicle = new List<Vehicle>();
@@ -55,26 +55,26 @@ vehicle.Add(new Bike{ Brand="Honda", Model="ct-100", Year=2000, NumberofWheels=2
 foreach (var vehicle1 in vehicle){
     vehicle1.start();
 } 
-
+*/
 //----------------------------------------------------------------------------------------------------------------------------
 
                 //Coupling
 
 //----------------------------------------------------------------------------------------------------------------------------
 
-
+/*
 using ConsoleApp1.src.OOP.Coupling;
 
 var order = new Order(new EmailSender());
 order.PlaceOrder();  
-
+*/
 //----------------------------------------------------------------------------------------------------------------------------
 
                 //Composition [has-a]
 
 //----------------------------------------------------------------------------------------------------------------------------
 
-
+/*
 using ConsoleApp1.src.OOP.Composition;
 
 var car = new Car();
@@ -88,7 +88,7 @@ car.StartCar();  */
 //A class should have only one reason to change, meaning that it should have only one responsibility or purpose
 
 //----------------------------------------------------------------------------------------------------------------------------
-
+/*
 using ConsoleApp1.src.SOLID.Single_Responsibility_Principle;
 
 var user = new User{
@@ -96,6 +96,14 @@ var user = new User{
     Email = "rashmikadilmin@gmail.com"
 };
 var userser = new UserService();
-userser.Register(user);
+userser.Register(user); */
+
+//----------------------------------------------------------------------------------------------------------------------------
+
+                //Open/Colse Principle (OCP)
+
+//Software entities (classes, modules, functions, etc..) should be open for extension but closed for modification.
+
+//----------------------------------------------------------------------------------------------------------------------------
 
 
