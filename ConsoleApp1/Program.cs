@@ -154,8 +154,58 @@ System.Console.WriteLine(circle.Area());  */
 
 //----------------------------------------------------------------------------------------------------------------------------
 
-
+/*
 using ConsoleApp1.src.SOLID.Dependency_Inversion_Principle;
 
 var car = new Car(new Engine()); //dependecy injection
-car.StartCar();
+car.StartCar(); */
+
+//----------------------------------------------------------------------------------------------------------------------------
+
+
+//Design Patterns
+
+
+//----------------------------------------------------------------------------------------------------------------------------
+
+
+
+//----------------------------------------------------------------------------------------------------------------------------
+
+
+//Behavioral Design Patterns
+//Memento Pattern
+
+//----------------------------------------------------------------------------------------------------------------------------
+
+
+//Behavioral design patterns focus on how objects interct with each other and how they communicate 
+//to accomplish specific tasks. These patterns address communication, responsibility, and algorithmic 
+//issues in OO software design. They help in defining clear and efficient communication mechanisms between
+//objects and classes.
+
+using ConsoleApp1.src.Design_Patterns.Behavioral.Memento_Pattern;
+
+var editor = new Editor();
+var history = new History(editor);
+history.BackUp();
+editor.Title = "Test";
+history.BackUp();
+editor.Content = "This is test for memento";
+history.BackUp();
+editor.Title = "The life of a dev: my mementos";
+
+System.Console.WriteLine("Title: " + editor.Title);
+System.Console.WriteLine("Content: " + editor.Content);
+
+history.Undo();
+
+System.Console.WriteLine("Title: " + editor.Title);
+System.Console.WriteLine("Content: " + editor.Content);
+
+history.ShowHistory();
+
+history.Undo();
+
+System.Console.WriteLine("Title: " + editor.Title);
+System.Console.WriteLine("Content: " + editor.Content);
