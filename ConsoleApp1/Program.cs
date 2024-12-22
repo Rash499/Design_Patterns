@@ -184,6 +184,8 @@ car.StartCar(); */
 //issues in OO software design. They help in defining clear and efficient communication mechanisms between
 //objects and classes.
 
+/*
+
 using ConsoleApp1.src.Design_Patterns.Behavioral.Memento_Pattern;
 
 var editor = new Editor();
@@ -208,4 +210,25 @@ history.ShowHistory();
 history.Undo();
 
 System.Console.WriteLine("Title: " + editor.Title);
-System.Console.WriteLine("Content: " + editor.Content);
+System.Console.WriteLine("Content: " + editor.Content); */
+
+
+//----------------------------------------------------------------------------------------------------------------------------
+
+
+//State Pattern
+
+
+//----------------------------------------------------------------------------------------------------------------------------
+
+using ConsoleApp1.src.Design_Patterns.State_Pattern;
+
+var doc = new Document();
+doc.State = DocumentStates.Moderation;
+doc.CurrentUserRole = UserRoles.Admin;
+
+System.Console.WriteLine(doc.State);
+
+doc.Publish();
+
+System.Console.WriteLine(doc.State);

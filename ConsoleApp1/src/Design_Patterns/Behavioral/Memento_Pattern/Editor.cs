@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 namespace ConsoleApp1.src.Design_Patterns.Behavioral.Memento_Pattern{
     //originator
     public class Editor{
-        public string Title {get; set;}
-        public string Content {get; set;}
+        public required string Title {get; set;}
+        public required string Content {get; set;}
 
         public Editor_State CreateState(){
             return new Editor_State(Title, Content);
