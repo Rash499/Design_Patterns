@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1.src.Design_Patterns.State_Pattern{
+namespace ConsoleApp1.src.Design_Patterns.State_Pattern.BadExample{
     public class Document{
         public DocumentStates State {get; set;}
 

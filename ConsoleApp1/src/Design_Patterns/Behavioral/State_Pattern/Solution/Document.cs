@@ -11,8 +11,12 @@ namespace ConsoleApp1.src.Design_Patterns.State_Pattern.Solution{
 
         public Document(UserRoles currentUserRole){
             State = new DraftState(this);
+            CurrentUserRoles = currentUserRole;
         }
 
+        public void Publish(){
+            State.Publish();
+        }
 
     }
 }

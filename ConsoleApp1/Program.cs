@@ -221,7 +221,9 @@ System.Console.WriteLine("Content: " + editor.Content); */
 
 //----------------------------------------------------------------------------------------------------------------------------
 
-using ConsoleApp1.src.Design_Patterns.State_Pattern;
+//Bad example for state pattern
+/*
+using ConsoleApp1.src.Design_Patterns.State_Pattern.BadExample;
 
 var doc = new Document();
 doc.State = DocumentStates.Moderation;
@@ -231,4 +233,20 @@ System.Console.WriteLine(doc.State);
 
 doc.Publish();
 
+System.Console.WriteLine(doc.State); */
+
+//Good example 
+
+using ConsoleApp1.src.Design_Patterns.State_Pattern.Solution;
+
+var doc = new Document(UserRoles.Admin);
+System.Console.WriteLine(doc.State);
+
+doc.Publish();
+System.Console.WriteLine(doc.State);
+
+doc.Publish();
+System.Console.WriteLine(doc.State);
+
+doc.State = new DraftState(doc);
 System.Console.WriteLine(doc.State);
