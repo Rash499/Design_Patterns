@@ -237,6 +237,7 @@ System.Console.WriteLine(doc.State); */
 
 //Good example 
 
+/*
 using ConsoleApp1.src.Design_Patterns.State_Pattern.Solution;
 
 var doc = new Document(UserRoles.Admin);
@@ -249,4 +250,19 @@ doc.Publish();
 System.Console.WriteLine(doc.State);
 
 doc.State = new DraftState(doc);
-System.Console.WriteLine(doc.State);
+System.Console.WriteLine(doc.State); */
+
+
+//----------------------------------------------------------------------------------------------------------------------------
+
+
+// Strategy Pattern
+
+
+//----------------------------------------------------------------------------------------------------------------------------
+
+// used for pass different algorithms, or behaviors to an object.
+// Let's consider an application that stores videos. Before Storing a video, the video needs to be compressed using a
+// specific compression algorithm, such as MOV or MP4, then if necessary apply an overlay to the video, such as black and white
+// or blur.
+
