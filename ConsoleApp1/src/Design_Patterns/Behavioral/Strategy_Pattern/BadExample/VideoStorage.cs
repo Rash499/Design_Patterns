@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1.src.Design_Patterns.Behavioral.Strategy_Pattern{
+namespace ConsoleApp1.src.Design_Patterns.Behavioral.Strategy_Pattern.BadExample{
 
     public class VideoStorage{
 
@@ -29,14 +29,14 @@ namespace ConsoleApp1.src.Design_Patterns.Behavioral.Strategy_Pattern{
 
             //compressing
             if(_compressor == Compressors.MOV){
-                System.Console.WriteLine("Compressing usin MOV");
+                System.Console.WriteLine("Compressing using MOV");
             }
             else if(_compressor == Compressors.MP4){
-                System.Console.WriteLine("Compressing usin MP4");
+                System.Console.WriteLine("Compressing using MP4");
 
             }
             else if(_compressor == Compressors.WEBM){
-                System.Console.WriteLine("Compressing usin WEBM");
+                System.Console.WriteLine("Compressing using WEBM");
 
             }
 

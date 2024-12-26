@@ -221,6 +221,10 @@ System.Console.WriteLine("Content: " + editor.Content); */
 
 //----------------------------------------------------------------------------------------------------------------------------
 
+//stage patterns store a reference to the context object that contain them.
+//states allowed to replace themselves 
+
+
 //Bad example for state pattern
 /*
 using ConsoleApp1.src.Design_Patterns.State_Pattern.BadExample;
@@ -266,3 +270,12 @@ System.Console.WriteLine(doc.State); */
 // specific compression algorithm, such as MOV or MP4, then if necessary apply an overlay to the video, such as black and white
 // or blur.
 
+using ConsoleApp1.src.Design_Patterns.Behavioral.Strategy_Pattern.Solution;
+
+var videoStorage = new VideoStorage(new CompressorMOV(),new OverlayBlackAndWhite());
+
+videoStorage.Store("/video/movie");
+
+videoStorage.SetCompressor(new CompressorMP4());
+videoStorage.SetOverlays(new OverlayNone());
+videoStorage.Store("/video/movie2");
