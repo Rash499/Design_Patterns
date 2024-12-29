@@ -293,6 +293,9 @@ videoStorage.Store("/video/movie2"); */
 //The iterator pattern provides a way of iterating over an object without having to expose the object's internal
 //Structure, which may change in the future. Changing the internals of an object should not affect its consumers.
 
+
+//BadExample
+/*
 using ConsoleApp1.src.Design_Patterns.Behavioral.Iterator_Pattern.BadExample;
 
 ShoppingList list = new ShoppingList();
@@ -303,6 +306,22 @@ list.Push("Meat");
 for(int i = 0; i < list.GetList().Count; i++){
     var item = list.GetList()[i];
     System.Console.WriteLine(item);
+} */
+
+//Solution
+
+using ConsoleApp1.src.Design_Patterns.Behavioral.Iterator_Pattern.Solution;
+
+ShoppingList list = new ShoppingList();
+list.Push("Milk");
+list.Push("Bread");
+list.Push("Meat");
+
+var iterator = list.CreateIterator();
+
+while(iterator.HasNext()){
+    System.Console.WriteLine(iterator.Current());
+    iterator.Next();
 }
 
 
