@@ -270,6 +270,7 @@ System.Console.WriteLine(doc.State); */
 // specific compression algorithm, such as MOV or MP4, then if necessary apply an overlay to the video, such as black and white
 // or blur.
 
+/*
 using ConsoleApp1.src.Design_Patterns.Behavioral.Strategy_Pattern.Solution;
 
 var videoStorage = new VideoStorage(new CompressorMOV(),new OverlayBlackAndWhite());
@@ -278,4 +279,30 @@ videoStorage.Store("/video/movie");
 
 videoStorage.SetCompressor(new CompressorMP4());
 videoStorage.SetOverlays(new OverlayNone());
-videoStorage.Store("/video/movie2");
+videoStorage.Store("/video/movie2"); */
+
+
+//----------------------------------------------------------------------------------------------------------------------------
+
+
+//Iterator Pattern
+
+
+//----------------------------------------------------------------------------------------------------------------------------
+
+//The iterator pattern provides a way of iterating over an object without having to expose the object's internal
+//Structure, which may change in the future. Changing the internals of an object should not affect its consumers.
+
+using ConsoleApp1.src.Design_Patterns.Behavioral.Iterator_Pattern.BadExample;
+
+ShoppingList list = new ShoppingList();
+list.Push("Milk");
+list.Push("Bread");
+list.Push("Meat");
+
+for(int i = 0; i < list.GetList().Count; i++){
+    var item = list.GetList()[i];
+    System.Console.WriteLine(item);
+}
+
+
