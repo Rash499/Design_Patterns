@@ -339,10 +339,23 @@ while(iterator.HasNext()){
 
 //BadExample
 
+/*
 using ConsoleApp1.src.Design_Patterns.Behavioral.Command_Pattern.RemoteControl.BadExample;
 
 var light = new Light();
 var remotecontrol = new RemoteControl(light);
 
 remotecontrol.PressButton(true);
-remotecontrol.PressButton(false);
+remotecontrol.PressButton(false); */
+
+//Solution
+
+using ConsoleApp1.src.Design_Patterns.Behavioral.Command_Pattern.RemoteControl.Solution;
+
+var light = new Light();
+var remote = new RemoteControl(new TurnOnCommand(light));
+
+remote.PressButton();
+
+remote.SetCommand(new DimCommand(light));
+remote.PressButton();
