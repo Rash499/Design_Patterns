@@ -310,6 +310,7 @@ for(int i = 0; i < list.GetList().Count; i++){
 
 //Solution
 
+/*
 using ConsoleApp1.src.Design_Patterns.Behavioral.Iterator_Pattern.Solution;
 
 ShoppingList list = new ShoppingList();
@@ -322,6 +323,26 @@ var iterator = list.CreateIterator();
 while(iterator.HasNext()){
     System.Console.WriteLine(iterator.Current());
     iterator.Next();
-}
+} */
+
+//----------------------------------------------------------------------------------------------------------------------------
 
 
+//Command Pattern
+
+
+//----------------------------------------------------------------------------------------------------------------------------
+
+//The command pattern is a behavioral design pattern that encapsulates a request as an object, allowing you to
+//parameterize clients with queues, requests, or operations. It enables you to decouple the sender from the
+//receiver, providing flexibility in the exection of command and supporting undoable operations.
+
+//BadExample
+
+using ConsoleApp1.src.Design_Patterns.Behavioral.Command_Pattern.RemoteControl.BadExample;
+
+var light = new Light();
+var remotecontrol = new RemoteControl(light);
+
+remotecontrol.PressButton(true);
+remotecontrol.PressButton(false);
