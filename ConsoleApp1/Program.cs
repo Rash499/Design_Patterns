@@ -350,6 +350,7 @@ remotecontrol.PressButton(false); */
 
 //Solution
 
+/*
 using ConsoleApp1.src.Design_Patterns.Behavioral.Command_Pattern.RemoteControl.Solution;
 
 var light = new Light();
@@ -358,4 +359,24 @@ var remote = new RemoteControl(new TurnOnCommand(light));
 remote.PressButton();
 
 remote.SetCommand(new DimCommand(light));
-remote.PressButton();
+remote.PressButton(); */
+
+//UndoableCommand
+
+using ConsoleApp1.src.Design_Patterns.Behavioral.Command_Pattern.UndoableCommandPattern;
+
+var htmlDoc = new HtmlDocument();
+var history = new History();
+
+htmlDoc.Content = "Hello world";
+System.Console.WriteLine(htmlDoc.Content);
+
+var italicCommand = new ItalicCommand(htmlDoc, history);
+italicCommand.Execute();
+
+System.Console.WriteLine(htmlDoc.Content);
+
+var undoCommand = new UndoCommand(history);
+undoCommand.Execute();
+
+System.Console.WriteLine(htmlDoc.Content);
