@@ -363,6 +363,7 @@ remote.PressButton(); */
 
 //UndoableCommand
 
+/*
 using ConsoleApp1.src.Design_Patterns.Behavioral.Command_Pattern.UndoableCommandPattern;
 
 var htmlDoc = new HtmlDocument();
@@ -380,3 +381,9 @@ var undoCommand = new UndoCommand(history);
 undoCommand.Execute();
 
 System.Console.WriteLine(htmlDoc.Content);
+*/
+
+using ConsoleApp1.src.Design_Patterns.Behavioral.Template_Method_Pattern.BadExample;
+
+var tea = new Tea();
+tea.MakeBeverage();
